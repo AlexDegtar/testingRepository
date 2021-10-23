@@ -1,11 +1,11 @@
 const numbers = [1, 0, -4];
 
-let quadraticEquation = (arr) => {
+let squareEquation = (arr) => {
     let [a, b, c] = arr;
     let descreminant = b * b - 4 * a * c;
 
     if (descreminant < 0) {
-        return `Descreminant is ${descreminant}, no quadratic equation`;
+        return `Descreminant is ${descreminant}, no square equation`;
     } else if (descreminant == 0) {
         let x = `Descreminant is ${descreminant}, x: ${b / 2 * a}`;
         return x;
@@ -14,4 +14,4 @@ let quadraticEquation = (arr) => {
         return x1;
     }
 };
-console.log(quadraticEquation(numbers));
+console.log(squareEquation(numbers));
